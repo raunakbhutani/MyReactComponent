@@ -16,12 +16,12 @@ A modern web app to instantly generate, preview, and copy-paste React components
 
 ## Demo
 
-<video src="src/assets/appPreview.mp4"  autoplay='autoplay' muted loop='true' width="800"></video>
+
+![App Preview](src/assets/appPreview.gif)
 
 ---
 
 ## Getting Started
-
 
 
 ### Installation
