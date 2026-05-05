@@ -1,0 +1,116 @@
+.inputSectionContainer {
+  width: 20%;
+  padding: 12px;
+  border-right: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fafafa;
+}
+
+.inputSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.inputSectionLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.promptCharCount {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.textAreaInput {
+  flex: 1;
+  min-height: 220px;
+  padding: 12px;
+  resize: none;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-size: 18.5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.textAreaInput:disabled {
+  background-color: #f8fafc;
+  cursor: not-allowed;
+}
+
+.examplePromptsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.examplePromptsTitle {
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  font-weight: 600;
+}
+
+.examplePromptsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.examplePromptChip {
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #334155;
+  font-size: 12px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.examplePromptChip:hover {
+  background-color: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.examplePromptChip:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.generateComponentBtn {
+  padding: 18px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.generateComponentBtn:hover {
+  background-color: #0456a7;
+}
+
+.generateComponentBtn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .inputSectionContainer {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./styles/layout/appLayout.css";
+@import "./styles/components/inputSection.css";
+@import "./styles/components/componentPreview.css";
+@import "./styles/components/codeViewer.css";
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
