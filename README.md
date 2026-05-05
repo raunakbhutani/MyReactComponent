@@ -22,9 +22,7 @@ A modern web app to instantly generate, preview, and copy-paste React components
 
 ## Getting Started
 
-### Prerequisites
-- Node.js (v16 or above recommended)
-- npm or yarn
+
 
 ### Installation
 ```bash
