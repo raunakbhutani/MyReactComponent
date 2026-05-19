@@ -112,5 +112,29 @@
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #eaeaea;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputSectionHeader,
+  .examplePromptsContainer {
+    display: none;
+  }
+
+  .inputSectionContainer {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .textAreaInput {
+    min-height: 120px;
+    flex: 0 0 auto;
+    font-size: 16px;
+  }
+
+  .generateComponentBtn {
+    padding: 14px;
+    flex-shrink: 0;
   }
 }

@@ -18,7 +18,7 @@ const InputSection = ({ value, loading, onChange, onGenerate, onExamplePromptSel
 
       <textarea 
         className='textAreaInput' 
-        placeholder='Describe your React component' 
+        placeholder=''
         value={value}
         onChange={onChange}
         disabled={loading}

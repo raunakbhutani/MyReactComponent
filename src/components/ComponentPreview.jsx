@@ -19,7 +19,7 @@ const ComponentPreview = ({ generatedComponent, generatedComponentCode, loading,
                 <span>Generating your component...</span>
               </div>
             ) : (
-              <p>Describe your component in the input field and click Generate Component</p>
+              <p className="emptyMessageHint">Describe your component in the input field and click Generate Component</p>
             )}
           </div>
         )}

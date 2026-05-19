@@ -5,6 +5,18 @@
 
 #root {
   width: 100vw;
+  max-width: 100%;
   height: 100vh;
+  height: 100dvh;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  #root {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: auto;
+  }
 }

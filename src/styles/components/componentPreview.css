@@ -9,7 +9,8 @@
   position: relative;
   background-color: white;
   color: #111;
-  overflow: hidden;
+  overflow: auto;
+  min-height: 0;
 }
 
 .previewContent {
@@ -50,14 +51,31 @@
 }
 
 @media (max-width: 1024px) {
+  .componentPreviewSectionContainer {
+    flex: 1;
+    min-height: 50vh;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: visible;
+  }
+
+  .previewContent {
+    min-height: 0;
+    flex: 1;
+  }
+
   .previewContent.splitView {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    overflow: visible;
   }
 
   .splitView .componentDisplay {
     max-width: 100%;
     width: 100%;
+    flex: 0 0 auto;
+    min-height: 200px;
+    height: auto;
   }
 }
 
@@ -117,9 +135,16 @@
 }
 
 @media (max-width: 480px) {
+  .componentPreviewSectionContainer {
+    padding: 8px;
+    min-height: 40vh;
+  }
+
   .previewContent {
     padding: 6px;
     gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .previewContent.splitView {
@@ -128,11 +153,21 @@
     gap: 8px;
   }
 
+  .emptyMessageHint {
+    display: none;
+  }
+
+  .emptyMessage {
+    min-height: 80px;
+    height: auto;
+  }
+
   .componentDisplay {
     padding: 8px;
     min-width: 0;
     max-width: 100%;
     width: 100%;
+    min-height: 160px;
     box-sizing: border-box;
   }
 
@@ -143,11 +178,13 @@
     box-sizing: border-box;
   }
 
-  /* Make sure the code viewer also takes full width */
   .codePanel {
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    min-height: 220px;
+    height: auto;
+    flex: 0 0 auto;
     box-sizing: border-box;
   }
 

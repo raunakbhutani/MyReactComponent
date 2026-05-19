@@ -66,6 +66,15 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  #root {
+    width: 100%;
+    text-align: left;
+    border-inline: none;
+    min-height: 100dvh;
+  }
+}
+
 h1,
 h2 {
   font-family: var(--heading);
