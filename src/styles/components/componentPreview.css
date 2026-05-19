@@ -115,3 +115,46 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .previewContent {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .previewContent.splitView {
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .componentDisplay {
+    padding: 8px;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .splitView .componentDisplay {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Make sure the code viewer also takes full width */
+  .codePanel {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .error-msg {
+    left: 0;
+    right: 0;
+    padding: 6px 4px;
+    font-size: 13px;
+  }
+}
