@@ -117,24 +117,57 @@
 }
 
 @media (max-width: 768px) {
-  .inputSectionHeader,
-  .examplePromptsContainer {
-    display: none;
-  }
-
   .inputSectionContainer {
     gap: 10px;
-    padding: 10px;
+    padding: 10px 12px;
+  }
+
+  .inputSectionHeader {
+    flex-wrap: wrap;
+  }
+
+  .inputSectionLabel {
+    font-size: 15px;
+  }
+
+  .promptCharCount {
+    font-size: 11px;
   }
 
   .textAreaInput {
-    min-height: 120px;
+    min-height: 100px;
     flex: 0 0 auto;
     font-size: 16px;
+    padding: 10px;
+  }
+
+  .examplePromptsTitle {
+    font-size: 12px;
+  }
+
+  .examplePromptsList {
+    gap: 6px;
+  }
+
+  .examplePromptChip {
+    font-size: 11px;
+    padding: 5px 8px;
+    line-height: 1.3;
+    text-align: left;
+    max-width: 100%;
+    white-space: normal;
   }
 
   .generateComponentBtn {
     padding: 14px;
     flex-shrink: 0;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .examplePromptChip {
+    width: 100%;
+    border-radius: 8px;
   }
 }
